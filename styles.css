@@ -20,24 +20,6 @@ body{
     
 }
 
-#NF{
-    position: absolute;
-    top: 80%;
-    left: 15%;
-    transform: translate(-50%, -50%);
-}
-
-.spotify-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #1DB954; /* Couleur Spotify */
-    padding: 10px;
-    border-radius: 12px;
-    width: max-content;
-}
-
-#NF {
-    filter: grayscale(100%); /* Exemple : Noir et blanc */
-    border: 2px solid white;
-}
+html {
+    scroll-behavior: smooth;
+  }
