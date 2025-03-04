@@ -4,6 +4,20 @@ body{
     
 }
 
+header {
+    position: relative;
+    width: 100%;
+    height: 60px; 
+}
+
+#HomeIcon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px; 
+    height: auto;
+}
+
 #MasterAcnolo{
 
     color: #131313;
