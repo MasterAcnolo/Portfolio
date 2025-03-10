@@ -11,11 +11,15 @@ header {
 }
 
 #HomeIcon {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 30px; 
-    height: auto;
+
+    width: 70%;
+    height: 70%;
+     
+}
+
+#HomeIcon:hover{
+
+    filter: drop-shadow(1px 10px 15px rgba(250,113,33,0.925));
 }
 
 #MasterAcnolo{
@@ -37,3 +41,4 @@ header {
 html {
     scroll-behavior: smooth;
   }
+
