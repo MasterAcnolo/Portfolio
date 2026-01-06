@@ -6,12 +6,15 @@
 
 /* Layout */
 @import url(layout/header.css);
+@import url(layout/nav.css);
 @import url(layout/main.css);
 @import url(layout/footer.css);
 
 /* Components */
 @import url(components/button.css);
+@import url(components/scrollHint.css);
 @import url(components/loader.css);
+@import url(components/wave.css);
 
 /* *{
     outline: solid red 2px;
@@ -31,4 +34,24 @@ body{
 
     color: var(--default-text-color);
     background: var(--default-background-color);
+
+    font-family: 'Inter', sans-serif;
+    user-select: none;
+}
+
+/* Link Style */
+.link{
+    color: var(--default-text-color);
+    text-decoration: none;
+}
+
+.link:hover{
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+/* Disabled Link */
+.disabled{
+    pointer-events: none;
+    color: rgb(152, 152, 152) !important;
 }
