@@ -84,9 +84,3 @@
   box-shadow: 0 0 25px rgba(90, 92, 92, 0.7), 0 0 10px rgba(255, 255, 255, 0.3);
   cursor: pointer;
 }
-
-/* About Section */
-.about{
-    max-width: 500px;
-    margin-top: 50vh;
-}
