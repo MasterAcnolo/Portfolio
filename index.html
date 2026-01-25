@@ -3,66 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Axel NICOLAS - Portfolio</title>
 
+    <title>Axel Nicolas - Portfolio</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/components/loader.css">
 
-
+    <!-- ICON -->
     <link rel="icon" href="assets/icon/icon.webp">
 
     <!-- Open Graph (Discord, Facebook, etc.) -->
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
+    <meta property="og:title" content="Axel Nicolas - Portfolio">
+    <meta property="og:description" content="Hi! I’m Axel, an 18-year-old Open Source developer. I build projects that help people, like Freedom Loader. Check my work and get in touch.">
+    <meta property="og:url" content="https://masteracnolo.github.io/Portfolio/">
+    <meta property="og:image" content="https://masteracnolo.github.io/Portfolio/assets/images/profilePicture.png">
     <meta property="og:type" content="website">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:image" content="">
 
 </head>
 <body>
+
+<main>
 
     <div class="loader" id="loader">
         <div class="spinner"></div>
         <p class="loader-text">Loading...</p>
     </div>
 
-    <header>
-    </header>
+    <div class="grid-2">
 
-    <main>
-        <section class="hero">
-             <div class="header-line">
-                <div class="text-block">
-                    <p class="name">Axel NICOLAS</p>
-                    <p class="quotes">“Never Stop Learning”</p>
-                </div>
-                <img src="assets/images/profilePicture.png" alt="Portrait de profil" class="profile-pic">
+        <!-- LEFT -->
+        <div class="section-1" data-aos="fade-right">
+
+            <img class="avatar" src="assets/images/profilePicture.png" alt="Axel Nicolas">
+
+            <i class="fas fa-code fa-3x white dev-icon"></i>
+
+            <h2>Axel Nicolas</h2>
+            <p class="subtitle">Open-Source & Fullstack Developer · France</p>
+
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/axelnicolas25/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/MasterAcnolo" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:axel.ncls@hotmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
-            <nav>
-                <a href="#" class="link">About</a>
-                <a href="#" class="link">Projects</a>
-                <a href="#" class="link">Contact</a>
-            </nav>
-                
-        </section>
+        </div>
 
-        <a href="#about" class="scrollHint" aria-label="Scroll to about section">
-            <span class="arrow" aria-hidden="true">⌄</span>
-        </a>
-        
-        <section class="about" id="about">
-           
-        </section>
-        
-    </main>
+        <!-- RIGHT -->
+        <div class="section-2" data-aos="fade-up">
 
-    <footer></footer>
-    
-    <script src="script/loader.js"></script>
+            <h2>About</h2>
+            <p>
+                Hi, I’m Axel, an 18-year-old open-source developer. I started programming at a young age
+                and now focus on building useful, accessible tools that help people.
+                One of my main projects is Freedom Loader.
+            </p>
+
+            <h2>Experience</h2>
+            <p>
+                I’ve worked on multiple personal and open-source projects, covering different aspects
+                of web and application development. Most of my work is publicly available on GitHub.
+            </p>
+
+            <h2>Programming Skills</h2>
+            <p>
+                JavaScript, Node.js, Electron, Express, Linux environments,
+                API design, creation, and integration.
+                I also explore low-level programming, such as C++ and Assembly, out of curiosity. You can see a full list of my skills <a href="skills.html" style="font-weight: 600;">here</a>.
+            </p>
+
+            <h2>Projects</h2>
+
+            <a href="https://github.com/MasterAcnolo/Freedom-Loader">
+                Freedom Loader - Open-source desktop application
+            </a>
+
+            <a href="https://masteracnolo.github.io/FreedomLoader/">
+                Freedom Loader Wiki - Documentation website
+            </a>
+
+            <a href="https://github.com/MasterAcnolo/NF-API/">
+                NF API - Rest API
+            </a>
+
+            <a href="https://masteracnolo.github.io/Bugatti-Chiron/">
+                Bugatti Chiron Website - Frontend showcase project
+            </a>
+
+            <a href="https://github.com/MasterAcnolo/">
+                And more to discover in my GitHub...
+            </a>
+
+            <h2>Contact</h2>
+
+            <a href="assets/Axel NICOLAS - CV.pdf" class="cv-button" download>
+                <i class="fas fa-download"></i>
+                Download CV
+            </a>
+
+            <a href="mailto:axel.ncls@hotmail.com">
+                axel.ncls@hotmail.com
+            </a>
+
+        </div>
+
+    </div>
+</main>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="script/loader.js"></script>
+<script>
+    AOS.init({
+        duration: 700,
+        easing: 'ease-out-cubic',
+        once: true
+    });
+</script>
+
 </body>
 </html>
