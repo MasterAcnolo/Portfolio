@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axel NICOLAS</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+
+    <link rel="icon" href="assets/icon/icon.png">
+
+    <!-- Open Graph (Discord, Facebook, etc.) -->
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+
+</head>
+<body>
+
+    <div class="loader" id="loader">
+        <div class="spinner"></div>
+        <p class="loader-text">Loading...</p>
+    </div>
+
+    <header>
+
+        <a href="index.html" class="title">
+            <span class="first">Axel</span>
+            <span class="last">NICOLAS</span>
+        </a>
+
+
+        <nav>
+            <a href="#" class="link">A Propos</a>
+            <a href="#" class="link">Projets</a>
+            <a href="#" class="link">Contact</a>
+        </nav>
+
+        <a href="#" class="language-button">
+            <img src="assets/flags/en.webp" alt="English Flag">
+        </a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>
+                <span>Bonjour ! </span> Moi c'est <span> Axel NICOLAS </span>
+            </h1>
+
+            <p>
+                Je suis Développeur <span id="typed"></span>
+            </p>
+
+            <div class="scroll-indicator" id="scrollBtn">
+                <span class="arrow">↓</span>
+                <span>découvrir</span>
+                <span class="arrow">↓</span>
+            </div>
+
+        </section>
+    </main>
+
+    <footer></footer>
+    
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        const options = {
+            strings: ["Front End", "Back End", "Open Source"],
+            typeSpeed: 60,
+            backSpeed: 40,
+            backDelay: 2000,
+            startDelay: 500,
+            loop: true,
+            showCursor: true,
+            cursorChar: "|"
+        };
+
+        const typed = new Typed("#typed", options);
+    </script>
+
+
+    <script src="script/loader.js"></script>
+    <script src="script/smoothScroll.js"></script>
+</body>
+</html>
