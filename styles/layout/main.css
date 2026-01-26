@@ -1,5 +1,5 @@
 .hero{
-    font-size: 3vw;
+    font-size: 3em;
     margin: 15px;
     margin-top: 25vh;
     font-weight: 300;
@@ -13,6 +13,46 @@
     font-weight: 500;
 }
 
+.quote {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+    opacity: 0.4;
+}
+
+
 #typed{
     font-weight: 600;
+}
+
+@media (max-width: 1090px) {
+    .quote{
+        font-size: 9px;
+        left: 50%;
+        transform: translate(-50%);
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 940px) {
+    .hero{
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 411px) {
+    .hero{
+        font-size: 1em;
+    }
 }

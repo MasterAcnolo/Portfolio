@@ -3,7 +3,7 @@ header{
     width: fit-content;
     align-items: center;
     margin: 15px;
-    font-size: 2em;
+    font-size: 1.3em;
 }
 
 /* Titre */
@@ -51,12 +51,24 @@ header .language-button img{
     width: 50px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 880px) {
     .title{
         display: none;
     }
 
     nav {
-        margin-left: 25px;
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 515px) {
+    header{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 440px) {
+    header{
+        font-size: 1em;
     }
 }
