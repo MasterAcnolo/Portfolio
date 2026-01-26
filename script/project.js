@@ -125,7 +125,7 @@ const smallProjects = [
     },
     {
         title: 'Random Quotes',
-        description: "Un simple distributeur de citation sur l'informatique",
+        description: "Un simple distributeur de citation sur l'informatique. Parce que pourquoi pas?",
         tags: ['JS',"Citation"],
         projectLink: 'https://masteracnolo.github.io/RandomQuotes/',
         githubLink: 'https://github.com/MasterAcnolo/RandomQuotes/'

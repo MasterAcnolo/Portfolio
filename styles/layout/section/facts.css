@@ -28,6 +28,11 @@
     margin-bottom: 1rem;
 }
 
+.bonus{
+    display: flex;
+    flex-direction: column;
+}
+
 @media (max-width: 768px) {
     .facts-columns {
         flex-direction: column;
