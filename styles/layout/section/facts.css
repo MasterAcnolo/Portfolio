@@ -1,0 +1,36 @@
+.facts {
+    background-color: var(--facts-background-color);
+    color: var(--facts-text-color);
+    padding: 2vw 5vw 5vw 5vw;
+}
+
+.facts h2 {
+    margin-bottom: 2rem;
+}
+
+.facts-columns {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.facts-columns .column {
+    flex: 1;
+}
+
+.facts-columns ul {
+    list-style: disc inside;
+    margin: 0;
+    padding-left: 0.5rem;
+}
+
+.facts-columns ul li {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .facts-columns {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}

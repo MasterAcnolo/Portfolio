@@ -13,7 +13,7 @@
 
 /* Section */
 @import url(layout/section/about.css);
-@import url(layout/section/10facts.css);
+@import url(layout/section/facts.css);
 @import url(layout/section/projects.css);
 @import url(layout/section/contact.css);
 
@@ -42,6 +42,10 @@ body{
 
     color: var(--default-text-color);
     background: var(--default-background-color);
+}
+
+section h2{
+    font-size: 3em;
 }
 
 /* underline animation */
