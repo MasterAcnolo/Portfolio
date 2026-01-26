@@ -33,6 +33,10 @@
     flex-direction: column;
 }
 
+.bonus h3{
+    font-size: 2em;
+}
+
 @media (max-width: 768px) {
     .facts-columns {
         flex-direction: column;
