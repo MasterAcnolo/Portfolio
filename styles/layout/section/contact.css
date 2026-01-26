@@ -1,0 +1,40 @@
+.contact{
+    padding: 2vw 5vw 5vw 5vw;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.contact h3, .contact h2{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Sous Titre */
+.contact h3{
+    font-style: italic;
+    font-weight: 400;
+    color: var(--project-subtitle-text-color);
+}
+
+/* Icons */
+.social-icon{
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.social-icon a{
+    font-size: 3rem;
+    transition: color .25s ease, transform .25s ease;
+    color: var(--default-text-color);
+    text-decoration: none;
+}
+
+.social-icon a:hover{
+    color: #525252;
+    transform: translateY(-3px);
+}
+
+.social-icon a:active{
+    transform: scale(0.95);
+}
