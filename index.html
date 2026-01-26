@@ -31,6 +31,8 @@
         <p class="loader-text">Loading...</p>
     </div>
 
+    <div id="progress-bar"></div>
+
     <header>
 
         <a href="index.html" class="title">
@@ -68,7 +70,39 @@
             </div>
 
         </section>
+
+        <section class="about">
+            <h2> A Propos </h2>
+            <div class="line" id="line1">
+                <img src="assets/images/profilePicture.png" alt="Axel NICOLAS">
+                <p> 
+                    Salut ! Je m’appelle Axel, j’ai 18 ans et je suis développeur, avec un intérêt pour le back-end comme le front-end. 
+                </p>
+            </div>
+            <div class="line" id="line2">
+                <p>
+                    J’ai commencé à programmer très jeune et je me concentre aujourd’hui sur la création d’outils utiles et accessibles.
+                </p>
+            </div>
+            <div class="line" id="line3">
+                <p>Je suis passioné par ce que je fais 
+
+                </p>
+            </div>
+            <div class="line" id="line4">
+                <p> 
+                    Et aujourd’hui je propose des outils tel que Freedom Loader.
+                </p>
+            </div>
+        </section>
+
+        <section class="10facts">
+            
+        </section>
+
     </main>
+
+    <!-- <img src="https://ghchart.rshah.org/MasterAcnolo" alt="MasterAcnolo's Github chart" /> --> <!-- GITHUB Graph-->
 
     <footer></footer>
     
@@ -89,8 +123,12 @@
         const typed = new Typed("#typed", options);
     </script>
 
+    <!-- Leader Line -->
+    <script src="https://cdn.jsdelivr.net/npm/leader-line@1.0.7/leader-line.min.js"></script>
 
     <script src="script/loader.js"></script>
+    <script src="script/line.js"></script>
+    <script src="script/progressBar.js"></script>
     <script src="script/smoothScroll.js"></script>
 </body>
 </html>

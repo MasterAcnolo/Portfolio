@@ -30,8 +30,6 @@ header{
     opacity: 1;
 }
 
-
-
 /* Navigation */
 nav{
     display: flex;
@@ -48,7 +46,7 @@ header .language-button{
 }
 
 header .language-button img{
-    width: 50px;
+    width: 45px;
 }
 
 @media (max-width: 880px) {

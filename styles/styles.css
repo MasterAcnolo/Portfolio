@@ -11,6 +11,12 @@
 @import url(layout/main.css);
 @import url(layout/footer.css);
 
+/* Section */
+@import url(layout/section/about.css);
+@import url(layout/section/10facts.css);
+@import url(layout/section/projects.css);
+@import url(layout/section/contact.css);
+
 /* Components */
 @import url(components/loader.css);
 @import url(components/button.css);
@@ -60,4 +66,15 @@ body{
 
 .link:hover::after {
     transform: scaleX(1);
+}
+
+/* progress bar */
+#progress-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 7px;
+    background-color: var(--default-text-color);
+    width: 0%;
+    z-index: 9999;
 }

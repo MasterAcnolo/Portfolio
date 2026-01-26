@@ -1,6 +1,6 @@
 .hero{
     font-size: 3em;
-    margin: 15px;
+    margin-left: 30px;
     margin-top: 25vh;
     font-weight: 300;
 }
@@ -15,7 +15,7 @@
 
 .quote {
     position: absolute;
-    left: 20px;
+    left: 30px;
     bottom: 20px;
     font-size: 14px;
     font-weight: 500;
@@ -24,7 +24,6 @@
     color: var(--title-text-color);
     opacity: 0.4;
 }
-
 
 #typed{
     font-weight: 600;
@@ -43,11 +42,33 @@
     .hero{
         font-size: 2em;
     }
+
+    .line {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    #line2, #line4 {
+        justify-content: flex-start;
+        text-align: left;
+    }
+    .line img {
+        width: 200px;
+    }
 }
 
 @media (max-width: 500px) {
     .hero{
         font-size: 1.5em;
+    }
+
+    .line img {
+        width: 150px;
+    }
+    .about h2 {
+        font-size: 2em;
+    }
+    .line {
+        font-size: 1.2em;
     }
 }
 
