@@ -37,7 +37,7 @@ const mediumProjects = [
     {
         image: 'assets/projects/sysLoader.png',
         title: 'System Loader',
-        description: "Gestionnaire de tâches pour le système d'exploitation Linux, qui génère des rapports",
+        description: "Gestionnaire de tâches pour le système d'exploitation Linux. Avec Rapport et GUI",
         tags: ['Python', 'Tkinter', 'Linux', 'OS'],
         githubLink: 'https://github.com/MasterAcnolo/SysLoader'
     },
