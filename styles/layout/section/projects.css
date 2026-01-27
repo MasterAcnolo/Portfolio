@@ -26,7 +26,6 @@
     box-shadow: 0 4px 16px rgba(0,0,0,0.1);
     margin-bottom: 40px;
     transition: all 0.3s ease;
-    cursor: pointer;
 }
 
 .featured-card:hover {
@@ -44,7 +43,7 @@
     width: 100%;
     height: 400px;
     object-fit: cover;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, var(--projects-btn-color) 0%, #764ba2 100%);
 }
 
 .featured-body {
@@ -56,7 +55,7 @@
 
 .featured-badge {
     display: inline-block;
-    background: #667eea;
+    background: var(--projects-btn-color);
     color: white;
     padding: 6px 16px;
     border-radius: 20px;
@@ -113,12 +112,12 @@
 }
 
 .featured-btn-primary {
-    background: #667eea;
+    background: var(--projects-btn-color);
     color: white;
 }
 
 .featured-btn-primary:hover {
-    background: #5568d3;
+    background: var(--projects-btn-hover-color);
 }
 
 .featured-btn-secondary {
@@ -151,7 +150,6 @@ h2.section-title {
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
-    cursor: pointer;
 }
 
 .medium-card:hover {
@@ -163,7 +161,7 @@ h2.section-title {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: var(--projects-btn-color);
 }
 
 .medium-body {
@@ -219,12 +217,12 @@ h2.section-title {
 }
 
 .medium-btn-primary {
-    background: #667eea;
+    background: var(--projects-btn-color);
     color: white;
 }
 
 .medium-btn-primary:hover {
-    background: #5568d3;
+    background: var(--projects-btn-hover-color);
 }
 
 .medium-btn-secondary {
@@ -266,6 +264,7 @@ h2.section-title {
 
 .small-title {
     font-size: 1.1em;
+    margin: 0;
     font-weight: 600;
     color: #1a1a1a;
 }
@@ -310,12 +309,12 @@ h2.section-title {
 }
 
 .small-btn-primary {
-    background: #667eea;
+    background: var(--projects-btn-color);
     color: white;
 }
 
 .small-btn-primary:hover {
-    background: #5568d3;
+    background: var(--projects-btn-hover-color);
 }
 
 .small-btn-secondary {
