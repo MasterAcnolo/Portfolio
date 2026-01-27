@@ -1,7 +1,6 @@
 footer {
-    width: 100%;
     background: var(--facts-background-color);
-    padding: 60px 20px 30px;
+    padding: 60px 20px 30px ;
     position: relative;
     overflow: hidden;
 }
@@ -26,6 +25,7 @@ footer {
     position: relative;
     display: inline-block;
     cursor: default;
+    text-align: center;
 }
 
 .styled-name {
@@ -144,7 +144,7 @@ footer::after {
     }
     
     footer {
-        padding: 50px 20px 25px;
+        padding: 50px 20px 25px; 
     }
     
     .footer-socials {
