@@ -18,7 +18,7 @@
 
 /* FEATURED CARD - Grande */
 .featured-card {
-    margin-top: 50px;
+    margin-top: 30px;
     background: #121212;
     color: var(--default-text-color);
     border-radius: 16px;
@@ -74,7 +74,7 @@
 }
 
 .featured-description {
-    color: #666;
+    color: #a1a1a1;
     font-size: 1.1em;
     line-height: 1.8;
     margin-bottom: 25px;

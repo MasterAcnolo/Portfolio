@@ -45,9 +45,9 @@
 
 
         <nav>
-            <a href="#" class="link">A Propos</a>
-            <a href="#" class="link">Projets</a>
-            <a href="#" class="link">Contact</a>
+            <a href="#about" class="link">A Propos</a>
+            <a href="#projects" class="link">Projets</a>
+            <a href="#contact" class="link">Contact</a>
         </nav>
 
         <!-- <a href="#" class="language-button">
@@ -74,28 +74,31 @@
 
         </section>
 
-        <section class="about">
-            <h2> A Propos </h2>
-            <div class="line" id="line1">
-                <img src="assets/images/profilePicture.png" alt="Axel NICOLAS">
-                <p> 
-                    Salut ! Je m’appelle Axel, j’ai 18 ans et je suis développeur, avec un intérêt pour le back-end comme le front-end. 
-                </p>
-            </div>
-            <div class="line" id="line2">
-                <p>
-                    J’ai commencé à programmer très jeune et je me concentre aujourd’hui sur la création d’outils utiles et accessibles.
-                </p>
-            </div>
-            <div class="line" id="line3">
-                <p>Je suis passioné par ce que je fais 
-
-                </p>
-            </div>
-            <div class="line" id="line4">
-                <p> 
-                    Et aujourd’hui je propose des outils tel que Freedom Loader.
-                </p>
+        <section class="about" id="about">
+            <div class="about-container">
+                <h2 class="about-title">À Propos</h2>
+                
+                <div class="about-content">
+                    <div class="about-image-wrapper">
+                        <img src="assets/images/profilePicture.png" alt="Axel NICOLAS" class="about-image">
+                        <div class="image-decoration"></div>
+                    </div>
+                    
+                    <div class="about-text">
+                        <p class="intro">
+                            Salut ! Je m'appelle <strong>Axel</strong>, j'ai 18 ans et je suis développeur full-stack avec une passion pour créer des solutions élégantes et performantes.
+                        </p>
+                        
+                        <p>
+                            J'ai commencé à programmer très jeune, explorant d'abord le front-end avant de me plonger dans le back-end. Cette double compétence me permet de concevoir des applications complètes, du design à la mise en production.
+                        </p>
+                        
+                        <p>
+                            Passionné par l'innovation et l'accessibilité, je me concentre sur la création d'outils qui simplifient la vie des utilisateurs. Aujourd'hui, je développe des projets comme <a href="#featuredContainer" class="link"><strong>Freedom Loader</strong></a>, des outils pensés pour être à la fois puissants et accessibles.
+                        </p>
+                        
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -122,16 +125,11 @@
                 </div>
             </div>
 
-            <div class="bonus">
-                <h3> En Bonus mon graphique des contributions sur <a href="https://github.com/MasterAcnolo" class="link" style="color: var(--default-background-color);">GitHub</a></h3>
-                <img src="https://ghchart.rshah.org/MasterAcnolo" alt="MasterAcnolo's Github chart" id="contribution" /> <!-- GITHUB Graph-->
-            </div>
-
         </section>
 
-        <section class="projects">
+        <section class="projects" id="projects">
             <h2>Mes Projets</h2>
-            <h3> Une liste de mes plus gros projets en matière de développement </h3>
+            <!-- <h3> Une liste de mes plus gros projets en matière de développement </h3> -->
 
             <!-- Featured Project -->
             <div id="featuredContainer"></div>
@@ -146,32 +144,203 @@
 
         </section>
 
-        <section class="skills">
-            <!-- ICI METTRE LES COMPETENCES -->
+       <section class="skills">
+            <div class="skills-container">
+                <h2 class="skills-title">Compétences</h2>
+                
+                <div class="skills-grid">
+                    <!-- Langages -->
+                    <div class="skill-section" data-aos="fade-up">
+                        <h3 class="skill-heading">Langages</h3>
+                        <div class="skill-line">
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=html" alt="HTML5">
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=css" alt="CSS3">
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" style="border-radius: 12px;">
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=mysql" alt="SQL">
+                                <span>SQL</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=md" alt="Markdown">
+                                <span>Markdown</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks & Librairies -->
+                    <div class="skill-section" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="skill-heading">Frameworks & Librairies</h3>
+                        <div class="skill-line">
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=react" alt="React">
+                                <span>React</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js">
+                                <span>Node.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=electron" alt="Electron">
+                                <span>Electron</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=express" alt="Express">
+                                <span>Express</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-original.svg" alt="Discord.js">
+                                <span>Discord.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWDhJMqF-AhqbiptyH90x7kWmYeQU4D--ojw&s" alt="Tkinter" style="border-radius: 12px;">
+                                <span>Tkinter</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Outils -->
+                    <div class="skill-section" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="skill-heading">Outils</h3>
+                        <div class="skill-line">
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=linux" alt="Linux">
+                                <span>Linux</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=git" alt="Git">
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=github" alt="GitHub">
+                                <span>GitHub</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=vscode" alt="VSCode">
+                                <span>VSCode</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=figma" alt="Figma">
+                                <span>Figma</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=postman" alt="Postman">
+                                <span>Postman</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- J'apprends & J'expérimente -->
+                    <div class="skill-section learning" data-aos="fade-up" data-aos-delay="250">
+                        <h3 class="skill-heading">J'apprends, J'expérimente, Ou j'ai déjà essayé: </h3>
+                        <div class="skill-line">
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=vue" alt="Vue.js">
+                                <span>Vue.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=cpp" alt="C++">
+                                <span>C++</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=php" alt="PHP">
+                                <span>PHP</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=cmake" alt="CMake">
+                                <span>CMake</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://hackr.io/tutorials/learn-assembly-language/logo/logo-assembly-language?ver=1762791712" alt="Assembly">
+                                <span>Assembly</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" alt="Android Studio">
+                                <span>Android</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         
-        <section class="contact">
-            <h2>Me Contacter </h2>
-            <h3> Libre à vous de me contacter pour une quelconque proposition. </h3>
+       <section class="contact" id="contact">
+            <div class="contact-container">
+                <h2 class="contact-title">Me Contacter</h2>
+                
+                <div class="contact-content">
+                    <!-- Partie gauche : Infos -->
+                    <div class="contact-info">
+                        <h3 class="contact-subtitle">Libre à vous de me contacter pour une quelconque proposition.</h3>
+                        
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/axelnicolas25/" target="_blank" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/MasterAcnolo" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="mailto:axel.ncls@hotmail.com" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
 
-            <div class="social-icon">
-                <a href="https://www.linkedin.com/in/axelnicolas25/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/MasterAcnolo" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="mailto:axel.ncls@hotmail.com">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
+                        <div class="cv-section">
+                            <p>Vous souhaitez consulter mon CV ?</p>
+                            <a href="assets/Axel NICOLAS - CV.pdf" class="cv-button" download>
+                                <i class="fas fa-download"></i>
+                                Télécharger le CV
+                            </a>
+                        </div>
 
-            <div class="cv">
-                <p> Vous souhaitez consultez mon CV ? </p>
-                <a href="assets/Axel NICOLAS - CV.pdf" class="cv-button" download>
-                    <i class="fas fa-download"></i>
-                        Télécharger le CV
-                </a>
+                        <div class="bonus">
+                                <h3> Graphique des contributions sur <a href="https://github.com/MasterAcnolo" class="link" style="color: var(--default-background-color);">GitHub</a></h3>
+                                <img src="https://ghchart.rshah.org/MasterAcnolo" alt="MasterAcnolo's Github chart" id="contribution" /> <!-- GITHUB Graph-->
+                        </div>
+                    </div>
+
+                    <!-- Partie droite : Formulaire -->
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form" action="" method="POST">
+                            <div class="form-group">
+                                <label for="name">Nom</label>
+                                <input type="text" id="name" name="name" required placeholder="Votre nom">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="votre.email@exemple.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Sujet</label>
+                                <input type="text" id="subject" name="subject" required placeholder="Objet du message">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" required placeholder="Votre message..." rows="5"></textarea>
+                            </div>
+
+                            <button type="submit" class="submit-button">
+                                <i class="fas fa-paper-plane"></i>
+                                Envoyer
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -179,16 +348,40 @@
 
     <footer>
         <div class="footer-content">
-            <div class="name-wrapper">
-                <div class="styled-name">AXEL NICOLAS</div>
+            <div class="footer-top">
+                <div class="name-wrapper">
+                    <div class="styled-name">AXEL NICOLAS</div>
+                </div>
+                
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/axelnicolas25/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/MasterAcnolo" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:axel.ncls@hotmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
             </div>
+            
+            <div class="footer-divider"></div>
+            
             <div class="copyright">© 2026 Axel NICOLAS - Tous droits réservés</div>
         </div>
     </footer>
     
     <!-- Typed.js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
+        AOS.init({
+            duration: 700,
+            easing: 'ease-out-cubic',
+            once: true
+        });
+
         const options = {
             strings: ["Front End", "Back End","d'Application" ,"Open Source"],
             typeSpeed: 60,
@@ -203,11 +396,7 @@
         const typed = new Typed("#typed", options);
     </script>
 
-    <!-- Leader Line -->
-    <script src="https://cdn.jsdelivr.net/npm/leader-line@1.0.7/leader-line.min.js"></script>
-
     <script src="script/loader.js"></script>
-    <script src="script/line.js"></script>
     <script src="script/project.js"></script>
     <script src="script/progressBar.js"></script>
     <script src="script/smoothScroll.js"></script>

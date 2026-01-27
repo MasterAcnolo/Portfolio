@@ -1,12 +1,9 @@
 footer {
     width: 100%;
-    background: #1c1c1c;
-    padding: 80px 20px 40px;
+    background: var(--facts-background-color);
+    padding: 60px 20px 30px;
     position: relative;
     overflow: hidden;
-    display: flex;
-    align-items: flex-end;
-    background: #0a0a0a;
 }
 
 .footer-content {
@@ -17,100 +14,120 @@ footer {
     z-index: 2;
 }
 
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Nom stylisé */
 .name-wrapper {
-    margin-bottom: 24px;
     position: relative;
     display: inline-block;
     cursor: default;
 }
 
 .styled-name {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 300;
-    letter-spacing: 0.3em;
-    color: #ffffff;
+    letter-spacing: 0.25em;
+    color: var(--facts-text-color);
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     position: relative;
     display: inline-block;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.5s ease;
 }
 
-/* Spotlight effect on hover */
-.name-wrapper::before {
+/* Ligne animée sous le nom */
+.styled-name::before {
     content: '';
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 0;
-    height: 0;
-    background: radial-gradient(
-        circle,
-        rgba(255, 255, 255, 0.15) 0%,
-        rgba(255, 255, 255, 0.08) 30%,
-        transparent 70%
-    );
-    border-radius: 50%;
-    opacity: 0;
-    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-    pointer-events: none;
-    z-index: 1;
+    bottom: -8px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: var(--facts-text-color);
+    transition: width 0.5s ease;
 }
 
-.name-wrapper:hover::before {
-    width: 600px;
-    height: 600px;
-    opacity: 1;
+.name-wrapper:hover .styled-name::before {
+    width: 100%;
 }
 
-.name-wrapper:hover .styled-name {
-    letter-spacing: 0.35em;
-    text-shadow: 0 0 40px rgba(255, 255, 255, 0.3);
+/* Social Icons */
+.footer-socials {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
 }
 
-/* Subtle underline effect */
-.styled-name::after {
+.footer-socials a {
+    font-size: 2rem;
+    color: var(--facts-text-color);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    position: relative;
+}
+
+.footer-socials a::after {
     content: '';
     position: absolute;
-    bottom: -12px;
+    bottom: -6px;
     left: 50%;
     transform: translateX(-50%) scaleX(0);
-    width: 80%;
+    width: 100%;
+    height: 2px;
+    background: var(--facts-text-color);
+    transition: transform 0.3s ease;
+}
+
+.footer-socials a:hover {
+    transform: translateY(-4px);
+}
+
+.footer-socials a:hover::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+.footer-socials a:active {
+    transform: translateY(-2px) scale(0.95);
+}
+
+/* Divider */
+.footer-divider {
+    width: 100%;
+    max-width: 600px;
     height: 1px;
     background: linear-gradient(
         90deg,
         transparent,
-        rgba(255, 255, 255, 0.5),
+        rgba(251, 247, 243, 0.3) 50%,
         transparent
     );
-    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 2rem auto;
 }
 
-.name-wrapper:hover .styled-name::after {
-    transform: translateX(-50%) scaleX(1);
-}
-
+/* Copyright */
 .copyright {
-    color: #888888;
+    color: rgba(251, 247, 243, 0.5);
     font-size: 0.875rem;
     font-weight: 300;
     letter-spacing: 0.05em;
-    margin-top: 8px;
 }
 
-/* Ambient glow at bottom */
+/* Effet ambient au bas */
 footer::after {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     width: 100%;
     height: 1px;
     background: linear-gradient(
         90deg,
         transparent,
-        rgba(255, 255, 255, 0.1) 50%,
+        rgba(251, 247, 243, 0.2) 50%,
         transparent
     );
 }
@@ -118,7 +135,7 @@ footer::after {
 /* Responsive */
 @media (max-width: 768px) {
     .styled-name {
-        font-size: 2rem;
+        font-size: 2.2rem;
         letter-spacing: 0.2em;
     }
     
@@ -127,16 +144,37 @@ footer::after {
     }
     
     footer {
-        padding: 60px 20px 30px;
+        padding: 50px 20px 25px;
     }
-
-    .name-wrapper::before {
-        width: 0;
-        height: 0;
+    
+    .footer-socials {
+        gap: 1.5rem;
     }
+    
+    .footer-socials a {
+        font-size: 1.5rem;
+    }
+    
+    .footer-divider {
+        margin: 2rem auto;
+    }
+}
 
-    .name-wrapper:hover::before {
-        width: 300px;
-        height: 300px;
+@media (max-width: 480px) {
+    .styled-name {
+        font-size: 1.8rem;
+        letter-spacing: 0.15em;
+    }
+    
+    .footer-top {
+        gap: 1.5rem;
+    }
+    
+    .footer-socials {
+        gap: 1.2rem;
+    }
+    
+    .footer-socials a {
+        font-size: 1.3rem;
     }
 }

@@ -15,6 +15,7 @@
 @import url(layout/section/about.css);
 @import url(layout/section/facts.css);
 @import url(layout/section/projects.css);
+@import url(layout/section/skills.css);
 @import url(layout/section/contact.css);
 
 /* Components */
@@ -81,4 +82,24 @@ section h2{
     background-color: var(--default-text-color);
     width: 0%;
     z-index: 9999;
+}
+
+/* Graphique des contributions */
+.bonus{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--default-text-color);
+    color: var(--default-background-color);
+    padding: 1em 0.5em;
+    border-radius: 12px;
+}
+
+.bonus h3{
+    font-size: 1.7em;
+    font-style: italic;
+    margin-top: 0;
+}
+
+.bonus #contribution{
+    width: 100%;
 }
