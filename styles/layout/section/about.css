@@ -1,0 +1,136 @@
+.about {
+    margin: 35vh 5vw 5vw 5vw;
+    background: var(--default-background-color);
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-title {
+    font-size: 3em;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--title-text-color);
+    position: relative;
+    display: inline-block;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+/* Wrapper de l'image */
+.about-image-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 20px;
+    border: 2px solid var(--title-text-color);
+    transform: rotate(-3deg);
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.about-image:hover {
+    transform: rotate(0deg);
+}
+
+.image-decoration {
+    position: absolute;
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
+    background: var(--title-text-color);
+    border-radius: 20px;
+    transform: rotate(3deg);
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    opacity: 0.15;
+}
+
+/* Texte */
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.about-text p {
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    line-height: 1.8;
+    color: var(--default-text-color);
+    margin: 0;
+}
+
+.about-text .intro {
+    font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+    color: var(--title-text-color);
+}
+
+.about-text strong {
+    color: var(--title-text-color);
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .about-image-wrapper {
+        order: -1;
+    }
+    
+    .about-image,
+    .image-decoration {
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 640px) {
+    .about {
+        padding: 6rem 5vw;
+    }
+    
+    .about-title {
+        margin-bottom: 3rem;
+    }
+    
+    .about-content {
+        gap: 2rem;
+    }
+    
+    .about-text {
+        gap: 1.2rem;
+    }
+    
+    .about-highlight {
+        padding: 1.2rem 1.5rem;
+    }
+    
+    .about-image,
+    .image-decoration {
+        max-width: 240px;
+    }
+}
+
+@media (max-width: 411px) {
+    .about{
+        margin-top: 25vh;
+    }
+}

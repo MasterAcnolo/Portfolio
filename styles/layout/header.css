@@ -1,0 +1,72 @@
+header{
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    margin: 15px;
+    font-size: 1.3em;
+}
+
+/* Titre */
+.title{
+    text-decoration: none;
+    color: var(--title-text-color);
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.title::before{
+    content: "</>";
+    font-weight: 800;
+    opacity: 0.8;
+}
+
+.title:hover{
+    color: var(--title-hover-color);
+    opacity: 1;
+}
+
+/* Navigation */
+nav{
+    display: flex;
+    gap: 25px;
+    margin-left: 50px;
+    height: fit-content;
+}
+
+header .language-button{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+
+}
+
+header .language-button img{
+    width: 45px;
+}
+
+@media (max-width: 880px) {
+    .title{
+        display: none;
+    }
+
+    nav {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 515px) {
+    header{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 440px) {
+    header{
+        font-size: 1em;
+    }
+}

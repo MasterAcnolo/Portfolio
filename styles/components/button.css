@@ -26,23 +26,6 @@
 }
 
 .cv-button:hover {
-    color: #000000;
+    background-color: #343434;
     border-color: #ffffff;
-}
-
-/* Language Button */
-#lang-button{
-    position: absolute;
-    display: flex;
-    right: 15px;
-    top: 15px;
-    z-index: 99;
-}
-
-#lang-button a{
-    background: none;
-}
-
-#lang-button img{
-    width: 50px;
 }

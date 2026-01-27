@@ -1,12 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
 :root{
-    --default-text-color: #f1f1f1;
-    --default-background-color: linear-gradient(to right, #1a1a1a, #2c2c2c);
+    --default-text-color: #1c1c1c;
+    --default-background-color: #FAF0E6;
 
-    /* Nav Style */
-    --nav-hover-color: #bebebe;
+    --title-text-color: #313131;
+    --title-hover-color: #414141;
 
-    /* Arrow (scrollHint) */
-    --button-arrow-text-color: #fff;
+    --facts-text-color: #fbf7f3;
+    --facts-background-color: #1c1c1c;
+
+    --project-subtitle-text-color: #3a3a3a;
+
+    --projects-btn-color:  rgb(51, 46, 46); 
+    --projects-btn-hover-color:  rgb(66, 66, 66); 
+
 }

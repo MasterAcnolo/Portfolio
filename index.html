@@ -1,151 +1,412 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Axel Nicolas - Portfolio</title>
+    <title>Axel Nicolas — Développeur Open Source</title>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <!-- SEO -->
+    <meta name="description" content="Axel Nicolas, développeur full-stack et open source. Création d’outils utiles, accessibles et performants. Portfolio et projets personnels.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ton-domaine.fr/">
 
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/components/loader.css">
-
-    <!-- ICON -->
-    <link rel="icon" href="assets/icon/icon.webp">
-
-    <!-- Open Graph (Discord, Facebook, etc.) -->
-    <meta property="og:title" content="Axel Nicolas - Portfolio">
-    <meta property="og:description" content="Salut ! Je suis Axel, un développeur open source de 18 ans. Je crée des projets qui aident les gens, comme Freedom Loader. Découvre mon travail et contacte-moi.">
-    <meta property="og:url" content="https://masteracnolo.github.io/Portfolio/">
-    <meta property="og:image" content="https://masteracnolo.github.io/Portfolio/assets/images/profilePicture.png">
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
+    <meta property="og:title" content="Axel Nicolas — Développeur Open Source">
+    <meta property="og:description" content="Portfolio d’Axel Nicolas, développeur full-stack passionné par l’open source.">
+    <meta property="og:url" content="https://ton-domaine.fr/">
+    <meta property="og:image" content="https://ton-domaine.fr/assets/og-image.png">
 
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Axel Nicolas — Développeur Open Source">
+    <meta name="twitter:description" content="Portfolio d’Axel Nicolas, développeur full-stack passionné par l’open source.">
+    <meta name="twitter:image" content="https://ton-domaine.fr/assets/og-image.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/icon/icon.png">
 </head>
 <body>
-
-<main>
 
     <div class="loader" id="loader">
         <div class="spinner"></div>
         <p class="loader-text">Loading...</p>
     </div>
 
-    <a id="lang-button" href="en.html">
-        <img src="assets/flags/en.webp">
-    </a>
+    <div id="progress-bar"></div>
 
-    <div class="grid-2">
+    <header>
 
-        <!-- LEFT -->
-        <div class="section-1" data-aos="fade-right">
+        <a href="index.html" class="title">
+            <span class="first">Axel</span>
+            <span class="last">NICOLAS</span>
+        </a>
 
-            <img class="avatar" src="assets/images/profilePicture.png" alt="Axel Nicolas">
 
-            <i class="fas fa-code fa-3x white dev-icon"></i>
+        <nav>
+            <a href="#about" class="link">A Propos</a>
+            <a href="#projects" class="link">Projets</a>
+            <a href="#contact" class="link">Contact</a>
+        </nav>
 
-            <h2>Axel Nicolas</h2>
-            <p class="subtitle">Développeur Open Source & Full-Stack · France</p>
+        <!-- <a href="#" class="language-button">
+            <img src="assets/flags/en.webp" alt="English Flag">
+        </a> -->
+    </header>
 
-            <div class="icons">
-                <a href="https://www.linkedin.com/in/axelnicolas25/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/MasterAcnolo" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="mailto:axel.ncls@hotmail.com">
-                    <i class="fas fa-envelope"></i>
-                </a>
+    <main>
+        <section class="hero">
+            <h1>
+                <span>Bonjour ! </span> Moi c'est <span> Axel NICOLAS </span>
+            </h1>
+
+            <p>
+                Je suis Développeur <span id="typed"></span>
+            </p>
+
+            <span class="quote">Je suis aussi le créateur de <a href="#projects" class="link"><i>Freedom Loader</i></a> </span>
+            <div class="scroll-indicator" id="scrollBtn">
+                <span class="arrow">↓</span>
+                <span>découvrir</span>
+                <span class="arrow">↓</span>
             </div>
+
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-container">
+                <h2 class="about-title">À Propos</h2>
+                
+                <div class="about-content">
+                    <div class="about-image-wrapper">
+                        <img src="assets/images/profilePicture.png" alt="Axel NICOLAS" class="about-image">
+                        <div class="image-decoration"></div>
+                    </div>
+                    
+                    <div class="about-text">
+                        <p class="intro">
+                            Salut ! Je m'appelle <strong>Axel</strong>, j'ai 18 ans et je suis développeur full-stack avec une passion pour créer des solutions élégantes et performantes.
+                        </p>
+                        
+                        <p>
+                            J'ai commencé à programmer très jeune, explorant d'abord le front-end avant de me plonger dans le back-end. Cette double compétence me permet de concevoir des applications complètes, du design à la mise en production.
+                        </p>
+                        
+                        <p>
+                            Passionné par l'innovation et l'accessibilité, je me concentre sur la création d'outils qui simplifient la vie des utilisateurs. Aujourd'hui, je développe des projets comme <a href="#featuredContainer" class="link"><strong>Freedom Loader</strong></a>, des outils pensés pour être à la fois puissants et accessibles.
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="facts">
+            <h2>10 Infos sur moi</h2>
+            <div class="facts-columns">
+                <div class="column">
+                    <ul>
+                        <li>J’ai commencé à développer très jeune.</li>
+                        <li>J’aime apprendre et transmettre.</li>
+                        <li>Je m’intéresse à tout ce qui touche à l’informatique.</li>
+                        <li>Je suis passionné par l’Open Source et les valeurs qu’il véhicule.</li>
+                        <li>À 17 ans, j’ai créé Freedom Loader, qui reste aujourd’hui mon plus gros projet.</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul>
+                        <li>Je développe et crée des outils qui répondent d’abord à mes besoins, puis que je souhaite partager avec les autres.</li>
+                        <li>J’aime beaucoup le drift et le sport automobile en général.</li>
+                        <li>Quand je pars quelque part, j’ai toujours un livre lié au code ou à l’informatique avec moi.</li>
+                        <li>J’aime me lancer des défis, et j’aime aussi qu’on m’en donne.</li>
+                        <li>J’aime la musique, j’écoute de tout, tout le temps.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="projects" id="projects">
+            <h2>Mes Projets</h2>
+            <!-- <h3> Une liste de mes plus gros projets en matière de développement </h3> -->
+
+            <!-- Featured Project -->
+            <div id="featuredContainer"></div>
+            
+            <!-- Medium Projects -->
+            <h2 class="section-title">Projets Principaux</h2>
+            <div class="medium-grid" id="mediumContainer"></div>
+            
+            <!-- Small Projects -->
+            <h2 class="section-title">Autres Projets</h2>
+            <div class="small-grid" id="smallContainer"></div>
+
+        </section>
+
+       <section class="skills">
+            <div class="skills-container">
+                <h2 class="skills-title">Compétences</h2>
+                
+                <div class="skills-grid">
+                    <!-- Langages -->
+                    <div class="skill-section" data-aos="fade-up">
+                        <h3 class="skill-heading">Langages</h3>
+                        <div class="skill-line">
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=html" alt="HTML5">
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=css" alt="CSS3">
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" style="border-radius: 12px;">
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=mysql" alt="SQL">
+                                <span>SQL</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=md" alt="Markdown">
+                                <span>Markdown</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks & Librairies -->
+                    <div class="skill-section" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="skill-heading">Frameworks & Librairies</h3>
+                        <div class="skill-line">
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=react" alt="React">
+                                <span>React</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js">
+                                <span>Node.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=electron" alt="Electron">
+                                <span>Electron</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=express" alt="Express">
+                                <span>Express</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-original.svg" alt="Discord.js">
+                                <span>Discord.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWDhJMqF-AhqbiptyH90x7kWmYeQU4D--ojw&s" alt="Tkinter" style="border-radius: 12px;">
+                                <span>Tkinter</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Outils -->
+                    <div class="skill-section" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="skill-heading">Outils</h3>
+                        <div class="skill-line">
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=linux" alt="Linux">
+                                <span>Linux</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=git" alt="Git">
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=github" alt="GitHub">
+                                <span>GitHub</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=vscode" alt="VSCode">
+                                <span>VSCode</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=figma" alt="Figma">
+                                <span>Figma</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=postman" alt="Postman">
+                                <span>Postman</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- J'apprends & J'expérimente -->
+                    <div class="skill-section learning" data-aos="fade-up" data-aos-delay="250">
+                        <h3 class="skill-heading">J'apprends, J'expérimente, Ou j'ai déjà essayé: </h3>
+                        <div class="skill-line">
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=vue" alt="Vue.js">
+                                <span>Vue.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=cpp" alt="C++">
+                                <span>C++</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=php" alt="PHP">
+                                <span>PHP</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://skillicons.dev/icons?i=cmake" alt="CMake">
+                                <span>CMake</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://hackr.io/tutorials/learn-assembly-language/logo/logo-assembly-language?ver=1762791712" alt="Assembly">
+                                <span>Assembly</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" alt="Android Studio">
+                                <span>Android</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+       <section class="contact" id="contact">
+            <div class="contact-container">
+                <h2 class="contact-title">Me Contacter</h2>
+                
+                <div class="contact-content">
+                    <!-- Partie gauche : Infos -->
+                    <div class="contact-info">
+                        <h3 class="contact-subtitle">Libre à vous de me contacter pour une quelconque proposition.</h3>
+                        
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/axelnicolas25/" target="_blank" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/MasterAcnolo" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="mailto:axel.ncls@hotmail.com" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+
+                        <div class="cv-section">
+                            <p>Vous souhaitez consulter mon CV ?</p>
+                            <a href="assets/Axel NICOLAS - CV.pdf" class="cv-button" download>
+                                <i class="fas fa-download"></i>
+                                Télécharger le CV
+                            </a>
+                        </div>
+
+                        <div class="bonus">
+                                <h3> Graphique des contributions sur <a href="https://github.com/MasterAcnolo" class="link" style="color: var(--default-background-color);">GitHub</a></h3>
+                                <img src="https://ghchart.rshah.org/MasterAcnolo" alt="MasterAcnolo's Github chart" id="contribution" /> <!-- GITHUB Graph-->
+                        </div>
+                    </div>
+
+                    <!-- Partie droite : Formulaire -->
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="4ba4b137-460a-4259-a2dd-917630f355b2">
+                            <div class="form-group">
+                                <label for="name">Nom</label>
+                                <input type="text" id="name" name="name" required placeholder="Votre nom">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="votre.email@exemple.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Sujet</label>
+                                <input type="text" id="subject" name="subject" required placeholder="Objet du message">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" required placeholder="Votre message..." rows="5"></textarea>
+                            </div>
+
+                            <button type="submit" class="submit-button">
+                                <i class="fas fa-paper-plane"></i>
+                                Envoyer
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="name-wrapper">
+                    <div class="styled-name">AXEL NICOLAS</div>
+                </div>
+                
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/axelnicolas25/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/MasterAcnolo" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:axel.ncls@hotmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-divider"></div>
+            
+            <div class="copyright">© 2026 Axel NICOLAS - Tous droits réservés</div>
         </div>
+    </footer>
+    
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 700,
+            easing: 'ease-out-cubic',
+            once: true
+        });
 
-        <!-- RIGHT -->
-        <div class="section-2" data-aos="fade-up">
+        const options = {
+            strings: ["Front End", "Back End","d'Application" ,"Open Source"],
+            typeSpeed: 60,
+            backSpeed: 40,
+            backDelay: 2000,
+            startDelay: 500,
+            loop: true,
+            showCursor: true,
+            cursorChar: "|"
+        };
 
-            <h2>A Propos</h2>
-            <p>
-                Salut, je m’appelle Axel, j’ai 18 ans et je suis développeur open source, avec un intérêt pour le back-end comme le front-end.<br>
-                J’ai commencé à programmer très jeune et je me concentre aujourd’hui sur la création d’outils utiles et accessibles.<br>
-                L’un de mes projets principaux est Freedom Loader.
+        const typed = new Typed("#typed", options);
+    </script>
 
-            </p>
-
-            <h2>Expérience</h2>
-            <p>
-                J’ai travaillé sur plusieurs projets personnels et open source, couvrant différents aspects du développement web et applicatif.
-                La majorité de mon travail est disponible publiquement sur GitHub.
-            </p>
-
-            <h2>Compétences</h2>
-            <p>
-                JavaScript, Node.js, Electron, Express, environnements Linux,
-                conception, création et intégration d’API.
-                J’explore également la programmation bas niveau, comme le C++ et l’Assembly, par curiosité.
-                Vous pouvez consulter la liste complète de mes compétences <a href="skills.html" style="font-weight: 600;">ici</a>.
-            </p>
-
-            <h2>Projets</h2>
-
-            <a href="https://github.com/MasterAcnolo/Freedom-Loader">
-                Freedom Loader - Application desktop open source
-            </a>
-
-            <a href="https://masteracnolo.github.io/FreedomLoader/">
-                Freedom Loader Wiki - Site de documentation de Freedom Loader
-            </a>
-
-            <a href="https://github.com/MasterAcnolo/NF-API/">
-                NF API - API Rest
-            </a>
-
-            <a href="https://masteracnolo.github.io/Bugatti-Chiron/">
-                Bugatti Chiron Website - Projet vitrine frontend
-            </a>
-
-            <a href="https://masteracnolo.github.io/1WEBD-NICOLAS-Axel/">
-                Movie Loader - Découvrir des films et consulter des données
-            </a>
-
-            <a href="https://masteracnolo.github.io/NeuroHaven/">
-                Neuro Haven - Projet Frontend Association
-            </a>
-
-            <a href="https://github.com/MasterAcnolo/">
-                Et bien plus à découvrir sur mon GitHub...
-            </a>
-
-            <h2>Contact</h2>
-
-            <a href="assets/Axel NICOLAS - CV.pdf" class="cv-button" download>
-                <i class="fas fa-download"></i>
-                Télécharger le CV
-            </a>
-
-            <a href="mailto:axel.ncls@hotmail.com">
-                axel.ncls@hotmail.com
-            </a>
-
-        </div>
-
-    </div>
-</main>
-
-<!-- AOS -->
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script src="script/loader.js"></script>
-<script>
-    AOS.init({
-        duration: 700,
-        easing: 'ease-out-cubic',
-        once: true
-    });
-</script>
-
+    <script src="script/loader.js"></script>
+    <script src="script/project.js"></script>
+    <script src="script/progressBar.js"></script>
+    <script src="script/smoothScroll.js"></script>
 </body>
 </html>
