@@ -1,5 +1,5 @@
 .about {
-    margin: 35vh 5vw 5vw 5vw;
+    margin: 30vh 5vw 5vw 5vw;
     background: var(--default-background-color);
 }
 
@@ -131,6 +131,7 @@
 
 @media (max-width: 411px) {
     .about{
-        margin-top: 25vh;
+        margin-top: 30vh;
+        scroll-margin-top: -18vh;
     }
 }
