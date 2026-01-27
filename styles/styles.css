@@ -96,7 +96,8 @@ section h2{
 
 .bonus h3{
     font-size: 1.7em;
-    font-style: italic;
+    text-align: center;
+    font-weight: 300;
     margin-top: 0;
 }
 
