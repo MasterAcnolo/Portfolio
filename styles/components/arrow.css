@@ -1,3 +1,5 @@
+/* Discover me Button */
+
 .scroll-indicator {
     position: absolute;
     left: 50%;
@@ -21,7 +23,7 @@
     display: inline-block;
 }
 
-.scroll-indicator:hover span:nth-child(2) { /* le texte "découvrir" */
+.scroll-indicator:hover span:nth-child(2) {
     letter-spacing: 0.2em;
     transform: translateY(-2px);
     opacity: 1;

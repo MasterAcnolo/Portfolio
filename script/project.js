@@ -16,7 +16,7 @@ const mediumProjects = [
         description: 'Un site vitrine pour mettre en pratique des compétence de design.',
         tags: ['Pour le plaisir', 'HTML', 'CSS', 'UI'],
         projectLink: 'https://masteracnolo.github.io/Bugatti-Chiron/index.html',
-        // githubLink: 'https://masteracnolo.github.io/Bugatti-Chiron/index.html'
+        githubLink: 'https://github.com/MasterAcnolo/Bugatti-Chiron/'
     },
     {
         image: 'assets/projects/MovieLoader.png',

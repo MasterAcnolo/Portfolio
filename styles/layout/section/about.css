@@ -1,11 +1,11 @@
 .about {
-    margin: 40vh 5vw 5vw 5vw;
+    margin-top: 45vh !important;
+    padding: 5vh 5vw;
     background: var(--default-background-color);
 }
 
 .about-container {
     max-width: 1200px;
-    margin: 0 auto;
 }
 
 .about-title {
@@ -86,11 +86,6 @@
 }
 
 /* Responsive */
-@media (max-width: 1429px) {
-    .about{
-        margin: 40vh 5vw 5vw 5vw;
-    }
-}
 
 @media (max-width: 968px) {
     .about-content {
@@ -111,6 +106,10 @@
 @media (max-width: 640px) {
     .about {
         padding: 6rem 5vw;
+    }
+
+    .about-container{
+        margin: 10px auto auto 50px;
     }
     
     .about-title {

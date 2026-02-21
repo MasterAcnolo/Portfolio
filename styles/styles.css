@@ -45,6 +45,10 @@ body{
     background: var(--default-background-color);
 }
 
+section{
+    margin-top: 50px;
+}
+
 section h2{
     font-size: 3em;
 }
