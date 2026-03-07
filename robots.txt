@@ -1,2 +1,4 @@
 User-agent: *
+Disallow:
 Allow: /
+Sitemap: https://masteracnolo.github.io/Portfolio/sitemap.xml
