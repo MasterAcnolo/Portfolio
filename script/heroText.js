@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () =>{
     // De 18h01 à 2h => Bonsoir
     let text = "Bonjour !";
     if (heure >= 2 && heure < 18) {
-        text = "Bonjour";
+        text = "Bonjour !";
     } else {
         text = "Bonsoir !";
     }
