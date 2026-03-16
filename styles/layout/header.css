@@ -67,6 +67,6 @@ header .language-button img{
 
 @media (max-width: 440px) {
     header{
-        font-size: 1em;
+        font-size: 0.9em;
     }
 }
