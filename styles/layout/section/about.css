@@ -4,10 +4,6 @@
     background: var(--default-background-color);
 }
 
-.about-container {
-    max-width: 1200px;
-}
-
 .about-title {
     font-size: 3em;
     margin-bottom: 2rem;
@@ -57,7 +53,6 @@
     transform: rotate(3deg);
     z-index: 1;
     top: 10px;
-    left: 10px;
     opacity: 0.15;
 }
 
