@@ -27,6 +27,14 @@ const mediumProjects = [
         githubLink: 'https://github.com/MasterAcnolo/1WEBD-NICOLAS-Axel/'
     },
     {
+        image: 'assets/projects/vigenere.webp',
+        title: 'Encode Loader',
+        description: "Encoder un message avec le chiffrement de Vigenère",
+        tags: ['Pour le Plaisir', 'HTML', 'JS', 'Cryptographie'],
+        projectLink: 'https://masteracnolo.github.io/Encode-Loader/',
+        githubLink: 'https://github.com/MasterAcnolo/Encode-Loader'
+    },
+    {
         image: 'assets/projects/nfAPI.png',
         title: 'NF API',
         description: "API Rest Permettant de récupérer des informations sur les musiques du musicien NF ",
@@ -42,14 +50,6 @@ const mediumProjects = [
         githubLink: 'https://github.com/MasterAcnolo/SysLoader'
     },
     {
-        image: 'assets/projects/clock.png',
-        title: 'Clock',
-        description: "Une Horloge, des fuseaux horaires, un thème sombre. Rien de plus",
-        tags: ['HTML', 'CSS', 'JS', 'Horloge'],
-        projectLink: 'https://masteracnolo.github.io/Clock/',
-        githubLink: 'https://github.com/MasterAcnolo/Clock'
-    },
-    {
         image: 'assets/projects/neuroHaven.webp',
         title: 'Neuro Haven',
         description: "Un site web pour une association sur l'Autisme. Contrainte: CSS uniquement",
@@ -61,6 +61,14 @@ const mediumProjects = [
 
 // PETITS PROJETS
 const smallProjects = [
+    {
+        image: 'assets/projects/clock.png',
+        title: 'Clock',
+        description: "Une Horloge, des fuseaux horaires, un thème sombre. Rien de plus",
+        tags: ['HTML', 'CSS', 'JS', 'Horloge'],
+        projectLink: 'https://masteracnolo.github.io/Clock/',
+        githubLink: 'https://github.com/MasterAcnolo/Clock'
+    },
     {
         title: 'Système Solaire',
         description: 'Système solaire en HTML CSS, simple mais efficace',
