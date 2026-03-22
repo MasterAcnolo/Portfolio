@@ -66,7 +66,6 @@ const smallProjects = [
         description: "Mon blog personnel, où je partage mes réflexions et découvertes.",
         tags: ['Blog', 'Personnel', 'HTML', 'CSS'],
         projectLink: 'https://masteracnolo.github.io/Blog/',
-        githubLink: 'https://github.com/MasterAcnolo/Blog'
     },
     {
         title: 'Clock',
@@ -210,7 +209,7 @@ function renderSmall() {
                 </div>
                 <div class="small-footer">
                     ${hasProject ? `<button class="small-btn small-btn-primary" onclick="window.open('${p.projectLink}', '_blank')">Site</button>` : ''}
-                    <button class="small-btn ${hasProject ? 'small-btn-secondary' : 'small-btn-primary'}" onclick="window.open('${p.githubLink}', '_blank')">GitHub</button>
+                    ${p.githubLink ? `<button class="small-btn ${hasProject ? 'small-btn-secondary' : 'small-btn-primary'}" onclick="window.open('${p.githubLink}', '_blank')">GitHub</button>` : ''}
                 </div>
             </div>
         `;
