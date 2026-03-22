@@ -62,7 +62,13 @@ const mediumProjects = [
 // PETITS PROJETS
 const smallProjects = [
     {
-        image: 'assets/projects/clock.png',
+        title: 'Blog',
+        description: "Mon blog personnel, où je partage mes réflexions et découvertes.",
+        tags: ['Blog', 'Personnel', 'HTML', 'CSS'],
+        projectLink: 'https://masteracnolo.github.io/Blog/',
+        githubLink: 'https://github.com/MasterAcnolo/Blog'
+    },
+    {
         title: 'Clock',
         description: "Une Horloge, des fuseaux horaires, un thème sombre. Rien de plus",
         tags: ['HTML', 'CSS', 'JS', 'Horloge'],
