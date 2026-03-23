@@ -143,6 +143,13 @@ const smallProjects = [
         projectLink: 'https://masteracnolo.github.io/RandomQuotes/',
         githubLink: 'https://github.com/MasterAcnolo/RandomQuotes/'
     },
+    {
+        title: 'Rock Paper Scissors',
+        description: "Jeu du pierre feuille ciseaux",
+        tags: ['HTML',"CSS", "JS"],
+        projectLink: 'https://masteracnolo.github.io/Rock-Paper-Scissors/',
+        githubLink: 'https://github.com/MasterAcnolo/Rock-Paper-Scissors/'
+    },
 ];
 
 // RENDER FEATURED
