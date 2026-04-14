@@ -68,6 +68,20 @@ const smallProjects = [
         projectLink: 'https://masteracnolo.github.io/Blog/',
     },
     {
+        title: 'Freedom Loader Site',
+        description: "Le Site officiel de Freedom Loader.",
+        tags: ['Freedom Loader', 'JS', 'React', 'Vite'],
+        projectLink: 'https://masteracnolo.github.io/Blog/',
+        githubLink: 'https://github.com/MasterAcnolo/Freedom-Loader-Site'
+    },
+    {
+        title: 'Freedom Loader Workshop',
+        description: "Le Workshop pour créer et découvrir des thèmes de Freedom Loader.",
+        tags: ['Freedom Loader', 'JS', 'HTML', 'CSS'],
+        projectLink: 'https://masteracnolo.github.io/Blog/',
+        githubLink: 'https://github.com/MasterAcnolo/Freedom-Loader-Workshop'
+    },
+    {
         title: 'Clock',
         description: "Une Horloge, des fuseaux horaires, un thème sombre. Rien de plus",
         tags: ['HTML', 'CSS', 'JS', 'Horloge'],
