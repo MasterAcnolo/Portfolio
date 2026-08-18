@@ -71,7 +71,7 @@ const smallProjects = [
         title: 'Freedom Loader Site',
         description: "Le Site officiel de Freedom Loader.",
         tags: ['Freedom Loader', 'JS', 'React', 'Vite'],
-        projectLink: 'https://masteracnolo.github.io/Blog/',
+        projectLink: 'https://masteracnolo.github.io/Freedom-Loader-Site/',
         githubLink: 'https://github.com/MasterAcnolo/Freedom-Loader-Site'
     },
     {
