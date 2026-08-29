@@ -4,7 +4,7 @@ const featuredProject = {
     title: 'Freedom Loader',
     description: 'Un outil de téléchargement de contenu vidéo et audio sur Internet. Qui ajoute une expérience utilisateur agréable. Open Source et gratuit !',
     tags: ['JavaScript', 'Electron', 'Express', 'Open Source'],
-    projectLink: 'https://masteracnolo.github.io/FreedomLoader',
+    projectLink: 'https://masteracnolo.github.io/Freedom-Loader-Site',
     githubLink: 'https://github.com/MasterAcnolo/Freedom-Loader'
 };
 
