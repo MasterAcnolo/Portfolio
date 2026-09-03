@@ -111,14 +111,14 @@ const smallProjects = [
     },
     {
         title: 'Memento Loader',
-        description: 'Simple To Do List qui indique le temps restant',
+        description: 'Simple To Do List qui indique le temps restant pour une tâche',
         tags: ['JS', 'Timer'],
         projectLink: 'https://masteracnolo.github.io/Memento-Loader/',
         githubLink: 'https://github.com/MasterAcnolo/Memento-Loader/'
     },
     {
         title: 'Focus Timer',
-        description: 'Timer de type Pomodoro, simple, basique',
+        description: 'Timer de type Pomodoro, simple, basique, efficace',
         tags: ['JS', 'Timer', 'Pomodoro'],
         projectLink: 'https://masteracnolo.github.io/Focus-Timer/',
         githubLink: 'https://github.com/MasterAcnolo/Focus-Timer/'
