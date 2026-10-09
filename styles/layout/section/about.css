@@ -26,11 +26,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: min(100%, 350px);
+    aspect-ratio: 700 / 714;
+    margin: 0 auto;
 }
 
 .about-image {
+    display: block;
     width: 100%;
-    max-width: 350px;
+    height: auto;
     border-radius: 20px;
     border: 2px solid var(--title-text-color);
     transform: rotate(-3deg);
@@ -46,7 +50,6 @@
 .image-decoration {
     position: absolute;
     width: 100%;
-    max-width: 350px;
     height: 100%;
     background: var(--title-text-color);
     border-radius: 20px;
@@ -90,11 +93,12 @@
     
     .about-image-wrapper {
         order: -1;
+        width: min(100%, 280px);
     }
     
     .about-image,
     .image-decoration {
-        max-width: 280px;
+        max-width: none;
     }
 }
 
@@ -125,7 +129,11 @@
     
     .about-image,
     .image-decoration {
-        max-width: 240px;
+        max-width: none;
+    }
+
+    .about-image-wrapper {
+        width: min(100%, 240px);
     }
 }
 

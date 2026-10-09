@@ -29,9 +29,19 @@
     <!-- Styles -->
     <link rel="stylesheet" href="styles/styles.css">
 
-    <!-- CDN -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <!-- Fonts and CDN styles are non-critical for the first paint. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://use.fontawesome.com">
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" as="style" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" as="style" href="https://unpkg.com/aos@2.3.4/dist/aos.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    </noscript>
 
     <!-- Favicon -->
     <link rel="icon" href="https://masteracnolo.github.io/No-Sense/assets/icons/code-white.svg">
@@ -92,7 +102,7 @@
                 
                 <div class="about-content">
                     <div class="about-image-wrapper" data-aos="fade-right">
-                        <img src="assets/images/photo.jpeg" alt="Axel NICOLAS" class="about-image">
+                        <img src="assets/images/photo.webp" alt="Axel NICOLAS" class="about-image" width="700" height="714" loading="lazy" decoding="async">
                         <div class="image-decoration"></div>
                     </div>
                     
@@ -166,27 +176,27 @@
                         <h3 class="skill-heading">Langages</h3>
                         <div class="skill-line">
                             <div class="skill-item">
-                                <img src="assets/icon/languages/html.svg" alt="HTML5">
+                                <img src="assets/icon/languages/html.svg" alt="HTML5" loading="lazy" decoding="async">
                                 <span>HTML5</span>
                             </div>
                             <div class="skill-item">
-                                <img src="assets/icon/languages/css.svg" alt="CSS3">
+                                <img src="assets/icon/languages/css.svg" alt="CSS3" loading="lazy" decoding="async">
                                 <span>CSS3</span>
                             </div>
                             <div class="skill-item">
-                                <img src="assets/icon/languages/JS.png" alt="JavaScript" style="border-radius: 12px;">
+                                <img src="assets/icon/languages/JS.png" alt="JavaScript" loading="lazy" decoding="async" style="border-radius: 12px;">
                                 <span>JavaScript</span>
                             </div>
                             <div class="skill-item">
-                                <img src="assets/icon/languages/python.png" alt="Python">
+                                <img src="assets/icon/languages/python.png" alt="Python" loading="lazy" decoding="async">
                                 <span>Python</span>
                             </div>
                             <div class="skill-item">
-                                <img src="assets/icon/learning/php.webp" alt="PHP">
+                                <img src="assets/icon/learning/php.webp" alt="PHP" loading="lazy" decoding="async">
                                 <span>PHP</span>
                             </div>
                             <div class="skill-item">
-                                <img src="https://skillicons.dev/icons?i=mysql" alt="SQL">
+                                <img src="https://skillicons.dev/icons?i=mysql" alt="SQL" loading="lazy" decoding="async">
                                 <span>SQL</span>
                             </div>
                         </div>
@@ -197,31 +207,31 @@
                         <h3 class="skill-heading">Frameworks & Librairies</h3>
                         <div class="skill-line">
                             <div class="skill-item">
-                                <img src="assets/icon/framework/angular.png" alt="Angular">
+                                <img src="assets/icon/framework/angular.png" alt="Angular" loading="lazy" decoding="async">
                                 <span>Angular</span>
                             </div>
                             <div class="skill-item">
-                                <img src="assets/icon/framework/react.png" alt="React">
+                                <img src="assets/icon/framework/react.png" alt="React" loading="lazy" decoding="async">
                                 <span>React</span>
                             </div>
                             <div class="skill-item">
-                                <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js">
+                                <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" loading="lazy" decoding="async">
                                 <span>Node.js</span>
                             </div>
                             <div class="skill-item">
-                                <img src="assets/icon/framework/electron.png" alt="Electron">
+                                <img src="assets/icon/framework/electron.png" alt="Electron" loading="lazy" decoding="async">
                                 <span>Electron</span>
                             </div>
                             <div class="skill-item">
-                                <img src="assets/icon/framework/express.webp" alt="Express">
+                                <img src="assets/icon/framework/express.webp" alt="Express" loading="lazy" decoding="async">
                                 <span>Express</span>
                             </div>
                             <div class="skill-item">
-                                <img src="assets/icon/framework/discordJS.png" alt="Discord.js">
+                                <img src="assets/icon/framework/discordJS.png" alt="Discord.js" loading="lazy" decoding="async">
                                 <span>Discord.js</span>
                             </div>
                             <div class="skill-item">
-                                <img src="assets/icon/framework/tkinter.png" alt="Tkinter" style="border-radius: 12px;">
+                                <img src="assets/icon/framework/tkinter.png" alt="Tkinter" loading="lazy" decoding="async" style="border-radius: 12px;">
                                 <span>Tkinter</span>
                             </div>
                         </div>
@@ -232,31 +242,31 @@
                         <h3 class="skill-heading">Outils</h3>
                         <div class="skill-line">
                             <div class="skill-item">
-                                <img src="assets/icon/tools/linux.webp" alt="Linux">
+                                <img src="assets/icon/tools/linux.webp" alt="Linux" loading="lazy" decoding="async">
                                 <span>Linux</span>
                             </div>
                             <div class="skill-item">
-                                <img src="assets/icon/tools/git.png" alt="Git">
+                                <img src="assets/icon/tools/git.png" alt="Git" loading="lazy" decoding="async">
                                 <span>Git</span>
                             </div>
                             <div class="skill-item">
-                                <img src="assets/icon/tools/github.webp" alt="GitHub">
+                                <img src="assets/icon/tools/github.webp" alt="GitHub" loading="lazy" decoding="async">
                                 <span>GitHub</span>
                             </div>
                             <div class="skill-item">
-                                <img src="assets/icon/tools/docker.png" alt="Docker">
+                                <img src="assets/icon/tools/docker.png" alt="Docker" loading="lazy" decoding="async">
                                 <span>Docker</span>
                             </div>
                             <div class="skill-item">
-                                <img src="https://skillicons.dev/icons?i=vscode" alt="VSCode">
+                                <img src="https://skillicons.dev/icons?i=vscode" alt="VSCode" loading="lazy" decoding="async">
                                 <span>VSCode</span>
                             </div>
                             <div class="skill-item">
-                                <img src="https://skillicons.dev/icons?i=figma" alt="Figma">
+                                <img src="https://skillicons.dev/icons?i=figma" alt="Figma" loading="lazy" decoding="async">
                                 <span>Figma</span>
                             </div>
                             <div class="skill-item">
-                                <img src="https://skillicons.dev/icons?i=postman" alt="Postman">
+                                <img src="https://skillicons.dev/icons?i=postman" alt="Postman" loading="lazy" decoding="async">
                                 <span>Postman</span>
                             </div>
                         </div>
@@ -267,27 +277,27 @@
                         <h3 class="skill-heading">J'apprends, J'expérimente, Ou j'ai déjà essayé: </h3>
                         <div class="skill-line">
                             <div class="skill-item">
-                                <img src="https://skillicons.dev/icons?i=java" alt="Android Studio">
+                                <img src="https://skillicons.dev/icons?i=java" alt="Android Studio" loading="lazy" decoding="async">
                                 <span>Java</span>
                             </div>
                             <div class="skill-item">
-                                <img src="assets/icon/learning/c++.png" alt="C++">
+                                <img src="assets/icon/learning/c++.png" alt="C++" loading="lazy" decoding="async">
                                 <span>C++</span>
                             </div>
                             <div class="skill-item">
-                                <img src="assets/icon/learning/vue.png" alt="Vue.js">
+                                <img src="assets/icon/learning/vue.png" alt="Vue.js" loading="lazy" decoding="async">
                                 <span>Vue.js</span>
                             </div>
                              <div class="skill-item">
-                                <img src="https://skillicons.dev/icons?i=powershell" alt="powershell">
+                                <img src="https://skillicons.dev/icons?i=powershell" alt="powershell" loading="lazy" decoding="async">
                                 <span>Power Shell</span>
                             </div>
                             <div class="skill-item">
-                                <img src="assets/icon/learning/cmake.webp" alt="CMake">
+                                <img src="assets/icon/learning/cmake.webp" alt="CMake" loading="lazy" decoding="async">
                                 <span>CMake</span>
                             </div>
                             <div class="skill-item">
-                                <img src="https://hackr.io/tutorials/learn-assembly-language/logo/logo-assembly-language?ver=1762791712" alt="Assembly">
+                                <img src="https://hackr.io/tutorials/learn-assembly-language/logo/logo-assembly-language?ver=1762791712" alt="Assembly" loading="lazy" decoding="async">
                                 <span>Assembly</span>
                             </div>
                         </div>
@@ -327,7 +337,7 @@
 
                         <div class="bonus">
                                 <h3> Graphique des contributions sur <a href="https://github.com/MasterAcnolo" class="link" style="color: var(--default-background-color);">GitHub</a></h3>
-                                <img src="https://ghchart.rshah.org/MasterAcnolo" alt="MasterAcnolo's Github chart" id="contribution" /> <!-- GITHUB Graph-->
+                                <img src="https://ghchart.rshah.org/MasterAcnolo" alt="MasterAcnolo's Github chart" id="contribution" loading="lazy" decoding="async" /> <!-- GITHUB Graph-->
                         </div>
                     </div>
 

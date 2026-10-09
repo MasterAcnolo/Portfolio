@@ -1,6 +1,6 @@
 // Freedom Loader
 const featuredProject = {
-    image: 'assets/projects/FreedomLoader.png',
+    image: 'assets/projects/FreedomLoader.webp',
     title: 'Freedom Loader',
     description: 'Un outil de téléchargement de contenu vidéo et audio sur Internet. Qui ajoute une expérience utilisateur agréable. Open Source et gratuit !',
     tags: ['JavaScript', 'Electron', 'Express', 'Open Source'],
@@ -11,7 +11,7 @@ const featuredProject = {
 // PROJETS MOYENS
 const mediumProjects = [
     {
-        image: 'assets/projects/BugattiChiron.png',
+        image: 'assets/projects/BugattiChiron.webp',
         title: 'Site Vitrine "Bugatti Chiron"',
         description: 'Un site vitrine pour mettre en pratique des compétence de design.',
         tags: ['Pour le plaisir', 'HTML', 'CSS', 'UI'],
@@ -19,7 +19,7 @@ const mediumProjects = [
         githubLink: 'https://github.com/MasterAcnolo/Bugatti-Chiron/'
     },
     {
-        image: 'assets/projects/MovieLoader.png',
+        image: 'assets/projects/MovieLoader.webp',
         title: 'Movie Loader',
         description: "Récupérer les informations d'une API et les afficher dans une interface agréable",
         tags: ['JS', 'API', 'UX', 'UI'],
@@ -27,7 +27,7 @@ const mediumProjects = [
         githubLink: 'https://github.com/MasterAcnolo/1WEBD-NICOLAS-Axel/'
     },
     {
-        image: 'assets/projects/vigenere.webp',
+        image: 'assets/projects/vigenere-optimized.webp',
         title: 'Encode Loader',
         description: "Encoder un message avec le chiffrement de Vigenère",
         tags: ['Pour le Plaisir', 'HTML', 'JS', 'Cryptographie'],
@@ -35,7 +35,7 @@ const mediumProjects = [
         githubLink: 'https://github.com/MasterAcnolo/Encode-Loader'
     },
     {
-        image: 'assets/projects/nfAPI.png',
+        image: 'assets/projects/nfAPI.webp',
         title: 'NF API',
         description: "API Rest Permettant de récupérer des informations sur les musiques du musicien NF ",
         tags: ['JS', 'Express', 'NF', 'API'],
@@ -43,14 +43,14 @@ const mediumProjects = [
         githubLink: 'https://github.com/MasterAcnolo/NF-API'
     },
     {
-        image: 'assets/projects/sysLoader.png',
+        image: 'assets/projects/sysLoader.webp',
         title: 'System Loader',
         description: "Gestionnaire de tâches pour le système d'exploitation Linux. Avec Rapport et GUI",
         tags: ['Python', 'Tkinter', 'Linux', 'OS'],
         githubLink: 'https://github.com/MasterAcnolo/SysLoader'
     },
     {
-        image: 'assets/projects/neuroHaven.webp',
+        image: 'assets/projects/neuroHaven-optimized.webp',
         title: 'Neuro Haven',
         description: "Un site web pour une association sur l'Autisme. Contrainte: CSS uniquement",
         tags: ['HTML', 'CSS', 'No JS', 'Autisme'],
@@ -167,7 +167,7 @@ function renderFeatured() {
     document.getElementById('featuredContainer').innerHTML = `
         <div class="featured-card">
             <div class="featured-content">
-                <img src="${p.image}" alt="${p.title}" class="featured-image" onerror="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.src='';">
+                <img src="${p.image}" alt="${p.title}" class="featured-image" loading="lazy" decoding="async" onerror="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.src='';">
                 <div class="featured-body">
                     <span class="featured-badge">Projet Principal</span>
                     <h2 class="featured-title">${p.title}</h2>
@@ -191,7 +191,7 @@ function renderMedium() {
         const hasProject = p.projectLink;
         return `
             <div class="medium-card">
-                <img src="${p.image}" alt="${p.title}" class="medium-image" onerror="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.src='';">
+                <img src="${p.image}" alt="${p.title}" class="medium-image" loading="lazy" decoding="async" onerror="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.src='';">
                 <div class="medium-body">
                     <h3 class="medium-title">${p.title}</h3>
                     <p class="medium-description">${p.description}</p>
