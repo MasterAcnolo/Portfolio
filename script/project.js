@@ -19,12 +19,11 @@ const mediumProjects = [
         githubLink: 'https://github.com/MasterAcnolo/Bugatti-Chiron/'
     },
     {
-        image: 'assets/projects/MovieLoader.webp',
-        title: 'Movie Loader',
-        description: "Récupérer les informations d'une API et les afficher dans une interface agréable",
-        tags: ['JS', 'API', 'UX', 'UI'],
-        projectLink: 'https://masteracnolo.github.io/1WEBD-NICOLAS-Axel/',
-        githubLink: 'https://github.com/MasterAcnolo/1WEBD-NICOLAS-Axel/'
+        image: 'assets/projects/FreedomTagger.png',
+        title: 'Freedom Tagger',
+        description: "Outil CLI pour nettoyer les métadonnées de musiques locales",
+        tags: ['CLI', 'JS', 'API', 'ID3'],
+        githubLink: 'https://github.com/MasterAcnolo/Freedom-Tagger'
     },
     {
         image: 'assets/projects/vigenere-optimized.webp',
@@ -33,6 +32,14 @@ const mediumProjects = [
         tags: ['Pour le Plaisir', 'HTML', 'JS', 'Cryptographie'],
         projectLink: 'https://masteracnolo.github.io/Encode-Loader/',
         githubLink: 'https://github.com/MasterAcnolo/Encode-Loader'
+    },
+    {
+        image: 'assets/projects/MovieLoader.webp',
+        title: 'Movie Loader',
+        description: "Récupérer les informations d'une API et les afficher dans une interface agréable",
+        tags: ['JS', 'API', 'UX', 'UI'],
+        projectLink: 'https://masteracnolo.github.io/1WEBD-NICOLAS-Axel/',
+        githubLink: 'https://github.com/MasterAcnolo/1WEBD-NICOLAS-Axel/'
     },
     {
         image: 'assets/projects/nfAPI.webp',
@@ -48,14 +55,6 @@ const mediumProjects = [
         description: "Gestionnaire de tâches pour le système d'exploitation Linux. Avec Rapport et GUI",
         tags: ['Python', 'Tkinter', 'Linux', 'OS'],
         githubLink: 'https://github.com/MasterAcnolo/SysLoader'
-    },
-    {
-        image: 'assets/projects/neuroHaven-optimized.webp',
-        title: 'Neuro Haven',
-        description: "Un site web pour une association sur l'Autisme. Contrainte: CSS uniquement",
-        tags: ['HTML', 'CSS', 'No JS', 'Autisme'],
-        projectLink: 'https://masteracnolo.github.io/NeuroHaven/',
-        githubLink: 'https://github.com/MasterAcnolo/NeuroHaven'
     },
 ];
 
@@ -82,6 +81,12 @@ const smallProjects = [
         githubLink: 'https://github.com/MasterAcnolo/Freedom-Loader-Workshop'
     },
     {
+        title: 'Blackjack',
+        description: "Un simple blackjack en C++",
+        tags: ['CPP', 'CLI'],
+        githubLink: 'https://github.com/MasterAcnolo/CPP-Blackjack'
+    },
+    {
         title: 'Clock',
         description: "Une Horloge, des fuseaux horaires, un thème sombre. Rien de plus",
         tags: ['HTML', 'CSS', 'JS', 'Horloge'],
@@ -101,6 +106,13 @@ const smallProjects = [
         tags: ['API', 'NF', 'Random'],
         projectLink: 'https://masteracnolo.github.io/Random-Song/',
         githubLink: 'https://github.com/MasterAcnolo/Random-Song/'
+    },
+    {
+        title: 'Neuro Haven',
+        description: "Un site web pour une association sur l'Autisme. Contrainte: CSS uniquement",
+        tags: ['HTML', 'CSS', 'No JS', 'Autisme'],
+        projectLink: 'https://masteracnolo.github.io/NeuroHaven/',
+        githubLink: 'https://github.com/MasterAcnolo/NeuroHaven'
     },
     {
         title: 'Weather Map',
